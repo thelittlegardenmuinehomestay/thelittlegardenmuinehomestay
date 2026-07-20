@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Homestay dạng bungalow không gian xanh mát, yên tĩnh tại 233A Nguyễn Đình Chiểu, Mũi Né. Phòng đẹp, riêng tư, giá chỉ từ 350k/đêm. Đặt phòng ngay!">
+    <title>The Little Garden Mui Ne Homestay | Homestay view vườn giá rẻ tại Mũi Né gần biển</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>The Little Garden Mui Ne Homestay</h1>
+    <nav>
+        <div class="lang-switcher">
+    <!-- Thêm chữ "Ngôn ngữ / Language" có data-lang để tự dịch -->
+            <span class="lang-label" data-lang="lang-label">Language:</span>
+            
+            <div class="flag-btns">
+                <!-- Cờ Vương Quốc Anh đại diện cho tiếng Anh -->
+                <button onclick="changeLanguage('en')" id="btn-en" class="flag-btn active" title="English">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English">
+                </button>
+                
+                <!-- Cờ Việt Nam đại diện cho tiếng Việt -->
+                <button onclick="changeLanguage('vi')" id="btn-vi" class="flag-btn" title="Tiếng Việt">
+                    <img src="https://flagcdn.com/w40/vn.png" alt="Tiếng Việt">
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="images/anh_nen.jpg" alt="Homestay">
+    <div class="hero-text">
+        <h2 data-lang="hero-title">Escape to Nature in Mui Ne</h2>
+        <p data-lang="hero-subtitle">Garden • Peaceful Atmosphere • Beautiful Lotus Pond</p>
+        <div class="hero-btns">
+            <a class="btn" href="https://zalo.me/0346602846"><i class="fa-solid fa-comment"></i> <span data-lang="btn-zalo">Book via Zalo</span></a>
+            <a class="btn" href="https://m.me/thelittlegardenmuinehomestay" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> <span data-lang="btn-fb">Book via Facebook</span></a>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <h2 data-lang="about-title">About Us</h2>
+    <p data-lang="about-desc">
+        The Little Garden Mui Ne Homestay is a peaceful, 
+        lush garden oasis located right in the heart of Mui Ne’s vibrant dining and entertainment district. 
+        Here, you are just a 5-minute walk (200m) from the nearest beach and within easy reach of delicious local restaurants and ocean-view cafes. 
+        Featuring independent bungalow designs for ultimate privacy, our property is wrapped in vibrant greenery to ensure a completely comfortable, relaxing, and serene stay.
+    </p>
+</section>
+
+<!-- FORM KIỂM TRA PHÒNG TRỐNG -->
+<h1 style="text-align: center; margin-top: 40px; color: #2d6a4f;" data-lang="rooms-title">
+    Our Room Categories
+</h1>
+    
+    <div class="rooms-container">
+    <!-- Standard Bungalow -->
+    <div class="room-card">
+        <div class="slider">
+            <button class="prev" onclick="changeSlide('standard', -1)">❮</button>
+            <img id="standard-image" src="images/standard bungalow/standard_bungalow.jpg" class="room-image" alt="Homestay tiêu chuẩn view vườn giá rẻ tại Mũi Né">
+            <button class="next" onclick="changeSlide('standard', 1)">❯</button>
+        </div>
+        <h2 data-lang="room1-name">Standard Bungalow</h2>
+        <p data-lang="room1-desc-1">Room size: 15 m²</p>
+        <p data-lang="room1-desc-2">Max capacity: 02 Guests</p>
+        <p data-lang="room1-desc-3">Bed type: 01 Double Bed</p>
+        <p><span data-lang="room-price-label">Price from:</span> 350,000 VND / night</p>
+        <!-- Sửa lại thành thẻ a thuần túy -->
+        <a class="btn" href="https://zalo.me/0346602846" target="_blank" data-lang="btn-search">Check Now</a>
+    </div>
+
+    <!-- Garden View Bungalow -->
+    <div class="room-card">
+        <div class="slider">
+            <button class="prev" onclick="changeSlide('garden', -1)">❮</button>
+            <img id="garden-image" src="images/garden view bungalow/garden_view_bungalow.jpg" class="room-image" alt="Homestay view vườn tại Mũi Né phù hợp cho cặp đôi">
+            <button class="next" onclick="changeSlide('garden', 1)">❯</button>
+        </div>
+        <h2 data-lang="room2-name">Garden View Bungalow</h2>
+        <p data-lang="room2-desc-1">Room size: 20 m²</p>
+        <p data-lang="room2-desc-2">Max capacity: 02 Guests</p>
+        <p data-lang="room2-desc-3">Bed type: 01 Double Bed</p>
+        <p><span data-lang="room-price-label">Price from:</span> 450,000 VND / night</p>
+        <!-- Sửa lại và đưa chữ Check Now vào trong -->
+        <a class="btn" href="https://zalo.me/0346602846" target="_blank" data-lang="btn-search">Check Now</a>
+    </div>
+
+    <!-- Garden View Bungalow 2 Beds -->
+    <div class="room-card">
+        <div class="slider">
+            <button class="prev" onclick="changeSlide('garden2', -1)">❮</button>
+            <img id="garden2-image" src="images/garden view bungalow 2 beds/garden view bungalow 2 beds.JPG" class="room-image" alt="Homestay view vườn tại Mũi Né phù hợp cho gia đình">
+            <button class="next" onclick="changeSlide('garden2', 1)">❯</button>
+        </div>
+        <h2 data-lang="room3-name">Garden View Bungalow 2 Beds</h2>
+        <p data-lang="room3-desc-1">Room size: 22 m²</p>
+        <p data-lang="room3-desc-2">Max capacity: 04 Guests</p>
+        <p data-lang="room3-desc-3">Bed type: 02 Double Beds</p>
+        <p><span data-lang="room-price-label">Price from:</span> 650,000 VND / night</p>
+        <!-- Sửa lại thành thẻ a thuần túy -->
+        <a class="btn" href="https://zalo.me/0346602846" target="_blank" data-lang="btn-search">Check Now</a>
+    </div>
+
+    <!-- Family Bungalow -->
+    <div class="room-card">
+        <div class="slider">
+            <button class="prev" onclick="changeSlide('family', -1)">❮</button>
+            <img id="family-image" src="images/family bungalow/family_bungalow.jpg" class="room-image" alt="Homestay giá rẻ cho gia đình tại Mũi Né">
+            <button class="next" onclick="changeSlide('family', 1)">❯</button>
+        </div>
+        <h2 data-lang="room4-name">Family Bungalow</h2>
+        <p data-lang="room4-desc-1">Room size: 25 m²</p>
+        <p data-lang="room4-desc-2">Max capacity: 04 Guests</p>
+        <p data-lang="room4-desc-3">Bed type: 02 Double Beds</p>
+        <p><span data-lang="room-price-label">Price from:</span> 700,000 VND / night</p>
+        <!-- Sửa lại thành thẻ a thuần túy -->
+        <a class="btn" href="https://zalo.me/0346602846" target="_blank" data-lang="btn-search">Check Now</a>
+    </div>
+</div>
+
+<section class="features">
+    <h2 data-lang="fac-title">Facilities</h2>
+    <ul>
+        <li data-lang="fac-1">Welcome drink</li>
+        <li data-lang="fac-2">Free WiFi</li>
+        <li data-lang="fac-3">Free parking</li>
+         <li data-lang="fac-4">Private kitchen for each bungalow</li>
+        <li data-lang="fac-5">Complimentary coffee and tea</li>
+        <li data-lang="fac-6">Air conditioning in each bungalow</li>
+        <li data-lang="fac-7">Private bathroom with hot water</li>
+        <li data-lang="fac-8">Shared washing machine</li>
+    </ul>
+</section>
+
+<!-- DỊCH VỤ ĐI KÈM -->
+<section class="services">
+    <h2 data-lang="srv-title">Extra Services</h2>
+    <div class="services-grid">
+        
+        <!-- Thuê xe máy -->
+        <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-motorcycle"></i></div>
+            <h3 data-lang="srv1-name">Motorbike Rental</h3>
+            <p class="price" data-lang="srv1-price">150,000 VND / day</p>
+            <p data-lang="srv1-desc">Scooters available: Honda Vision, Air Blade, or 50cc bikes. Perfect for exploring Mui Ne at your own pace.</p>
+        </div>
+
+        <!-- Jeep Tour -->
+        <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-truck-pickup"></i></div>
+            <h3 data-lang="srv2-name">Mui Ne Jeep Tour</h3>
+            <p class="price" data-lang="srv2-price">200,000 - 600,000 VND</p>
+            <p data-lang="srv2-desc">Visit White Sand Dunes, Red Sand Dunes, and Fairy Stream. Available in both shared and private tours.</p>
+        </div>
+
+        <!-- Thuê loa -->
+        <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-volume-high"></i></div>
+            <h3 data-lang="srv3-name">Karaoke Speaker Rental</h3>
+            <p class="price" data-lang="srv3-price">300,000 VND / evening</p>
+            <p data-lang="srv3-desc">Perfect for a fun BBQ evening with friends and family in our garden atmosphere.</p>
+        </div>
+
+        <!-- Đặt vé xe -->
+        <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-bus"></i></i></div>
+            <h3 data-lang="srv4-name">Bus Ticket Booking</h3>
+            <p class="price" data-lang="srv4-price">Free Support</p>
+            <p data-lang="srv4-desc">We assist you in booking reliable bus tickets to and from Saigon, Da Lat, Nha Trang, and other destinations.</p>
+        </div>
+
+    </div>
+</section>
+<section class="about">
+    <h2 data-lang="where-to-find">Where to find us?</h2>
+    <div style="margin: 20px auto; max-width: 800px;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7834.190402195371!2d108.2231534!3d10.956181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3176857d625c87e9%3A0x31cb9e9b81831675!2sThe%20little%20garden%20Mui%20Ne%20homestay!5e0!3m2!1svi!2s!4v1784347316220!5m2!1svi!2s" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+
+    <div class="contact-buttons">
+        <a href="tel:+84346602846" class="contact-btn call">
+            <i class="fa-solid fa-phone"></i> <span data-lang="call-us">Call Us</span>
+        </a>
+        <a href="https://wa.me/84346602846" class="contact-btn whatsapp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://m.me/thelittlegardenmuine" class="contact-btn messenger" target="_blank">
+            <i class="fa-brands fa-facebook-messenger"></i> Messenger
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>The Little Garden Mui Ne</h3>
+            <p><i class="fa-solid fa-location-dot"></i> 233A Nguyen Dinh Chieu, Ham Tien, Mui Ne, Lam Dong, Vietnam</p>
+            <p><i class="fa-solid fa-phone"></i> Hotline: +84 34 660 2846</p>
+            <p><i class="fa-solid fa-envelope"></i> Email: littlegardenhomestay@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 The Little Garden Mui Ne Homestay. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
